@@ -21,7 +21,7 @@ export class EditComponent implements OnInit {
   }
 
   onEditMovie(form: NgForm){
-    this.movieService.UpdateMovie(this.movie._id, form.value.title, form.value.year, form.value.poster);
+    this.movieService.UpdateMovie(this.movie._id, form.value.title, form.value.year, form.value.poster).subscribe();
   }
 
 }
